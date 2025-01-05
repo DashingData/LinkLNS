@@ -1,10 +1,10 @@
 echo [$(date)]: "START"
 # Yeh line script ke shuru hone ka time print karta hai, jo debugging mein madad karta hai
 
-echo [$(date)]: "Create conda env using python 3.9"
+echo [$(date)]: "Create conda env using python 3.8"
 # Yeh line batata hai ki hum Python 3.9 ke saath ek naya conda environment bana rahe hain
 
-conda create --prefix ./env python=3.9 -y
+conda create --prefix ./env python=3.8 -y
 # Yeh command current directory mein 'env' naam se ek naya conda environment banata hai, Python 3.9 ke saath
 # '-y' flag automatically 'yes' answer deta hai, jisse process automated ho jata hai
 
