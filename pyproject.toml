@@ -1,0 +1,14 @@
+[build-system]
+# Yeh section package build process ke liye requirements batata hai
+requires = ["setuptools>=60.0", "wheel"]  # Build ke liye setuptools version 60.0 ya usse zyada, aur wheel package chahiye
+build-backend = "setuptools.build_meta"  # Build process ke liye setuptools.build_meta ka use hoga
+
+[tool.pytest.ini_options]
+# Yeh section pytest (testing framework) ke liye settings provide karta hai
+testpaths = ["test"]  # Pytest ko batata hai ki test files "test" folder mein hain
+
+[tool.mypy]
+# Yeh section mypy (static type checker) ke liye configuration deta hai
+mypy_path = "src"  # Mypy ko batata hai ki type checking ke liye "src" folder mein dekhna hai
+ignore_missing_imports = true  # Agar koi import missing ho to mypy use ignore kar dega
+

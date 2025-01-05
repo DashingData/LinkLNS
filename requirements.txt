@@ -1,0 +1,4 @@
+ipywidgets==8.1.5
+notebook==7.3.2
+pt-youtube==1.1.7
+ensure==1.0.4
